@@ -1,3 +1,4 @@
+
 module.exports.sumNumbers = function(numArray) {
   for (var index = 0, sum = 0; index < numArray.length; sum += numArray[index++]); 
   return sum;
