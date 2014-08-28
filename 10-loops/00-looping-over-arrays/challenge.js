@@ -1,4 +1,3 @@
-
 module.exports.sumNumbers = function(numArray) {
   for (var index = 0, sum = 0; index < numArray.length; sum += numArray[index++]); 
   return sum;
@@ -9,8 +8,12 @@ module.exports.splitAndLowerCaseString = function(inputString) {
   return myVar.split(",");
 };
 
-module.exports.addIndex = function(addIndex) {
+module.exports.addIndex = function(input) {
   var myArray = [];
-  for (var index = 0; index < addIndex.length.join; index++);
-  return myArray = addIndex.join(" ").split(" ");
+  
+  for (var index = 0; index < input.length; index++){
+    var element = input[index];
+    myArray[index] = index + " is " + element;
+  }
+  return myArray;
 };
